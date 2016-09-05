@@ -1,0 +1,200 @@
+@import 'utility'
+
+$base-text-size: 16px
+$base-font-family: sans-serif
+
+html
+  text-size-adjust: 100%
+  display: block
+  height: 100vh
+
+body
+  @include font-smoothing(on)
+  font: $base-text-size / 1 $base-font-family
+  margin: 0
+  padding: 0
+  font-family: sans-serif
+  min-height: 100vh
+  display: block
+  font-size: 14px
+  line-height: 1.5
+
+.page-content
+  padding-top: 20px
+
+.container
+  width: 980px
+  margin-right: auto
+  margin-left: auto
+
+.Header
+  padding-top: 10px
+  padding-bottom: 10px
+  background-color: #f5f5f5
+  border-bottom: 1px solid #e5e5e5
+  display: block
+  height: 25px
+
+.headContainer
+  width: 980px
+  margin-right: auto
+  margin-left: auto
+
+form
+  display: block
+  margin-top: 0em
+
+.headerSearch
+  float: left
+  width: 360px
+  margin-right: 10px
+
+ul
+  padding-left: 0
+  margin-top: 0
+  margin-bottom: 0
+
+.headerNav
+  list-style: none
+
+.float-left
+  float: left !important
+
+.header-nav-item
+  float: left
+
+.header-nav-link
+  display: block
+  padding: 4px 8px
+  font-size: 13px
+  font-weight: 600
+  line-height: 20px
+  color: #333
+  text-decoration: none
+
+li
+  display: list-item
+  list-style: none
+  text-align: -webkit-match-parent
+
+.user-nav
+  margin-right: -8px
+
+.float-right
+  float: right !important
+
+.headerLogo
+  float: left
+  margin-right: 10px
+  margin-left: -2px
+  white-space: nowrap
+
+.columns
+  margin-right: -10px
+  margin-left: -10px
+
+.one-fourth
+  width: 25%
+
+.column
+  float: left
+  padding-right: 10px
+  padding-left: 10px
+
+.rounded-2
+  border-radius: 6px !important
+
+.avatar
+  display: inline-block
+  overflow: hidden
+  line-height: 1
+  vertical-align: middle
+  border-radius: 3px
+
+.vcard-names
+  line-height: 1
+
+.my-3
+  margin-top: 12px !important
+  margin-bottom: 12px !important
+
+.vcard-fullname
+  font-size: 26px
+  line-height: 30px
+
+.vcard-username
+  font-size: 20px
+  font-style: normal
+  font-weight: 300
+  line-height: 24px
+  color: #666
+
+.user-profile-bio
+  margin-bottom: 12px
+  overflow: hidden
+  font-size: 14px
+  color: #767676
+
+.vcard-details
+  list-style: none
+
+.py-3
+  padding-top: 12px !important
+  padding-bottom: 12px !important
+
+.border-gray-light
+  border-color: #eee !important
+
+.border-top
+  border-top: 1px #e5e5e5 solid !important
+
+.vcard-details .css-truncate.css-truncate-target
+  width: 100%
+  max-width: 100%
+
+.css-truncate.css-truncate-target, .css-truncate .css-truncate-target
+  display: inline-block
+  max-width: 125px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+  vertical-align: top
+
+
+.vcard-detail
+  padding-left: 22px
+
+.vcard-detail
+  padding-left: 24px
+  font-size: 14px
+
+.py-1
+  padding-top: 3px !important
+  padding-bottom: 3px !important
+
+.vcard-detail .octicon
+  margin-left: -22px
+
+
+.vcard-detail .octicon
+  float: left
+  width: 16px
+  margin-top: 3px
+  margin-left: -24px
+  color: #999
+  text-align: center
+
+svg:not(:root)
+  overflow: hidden
+
+.octicon
+  vertical-align: text-bottom
+
+.octicon
+  display: inline-block
+  vertical-align: text-top
+  fill: currentColor
+
+h1
+  font-size: 32px
+  font-weight: 600
