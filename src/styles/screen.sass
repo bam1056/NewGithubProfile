@@ -93,6 +93,15 @@ li
   margin-right: -10px
   margin-left: -10px
 
+.columns::before
+  display: table
+  content: ""
+
+.columns::after
+  display: table
+  clear: both
+  content: ""
+
 .one-fourth
   width: 25%
 
@@ -195,6 +204,146 @@ svg:not(:root)
   vertical-align: text-top
   fill: currentColor
 
+.vcard-stat
+  float: left
+  width: 33.333%
+  font-size: 11px
+  text-transform: capitalize
+  text-decoration: none
+
+.vcard-stat-count
+  font-size: 28px
+  font-weight: 600
+  line-height: 1
+
+.d-block
+  display: block !important
+
+.text-gray
+  color: #767676 !important
+
+.vcard-stats
+  text-align: center
+
+.py-3
+  padding-top: 12px !important
+  padding-bottom: 12px !important
+
+.mb-3
+  margin-bottom: 12px !important
+
+.border-gray-light
+  border-color: #eee !important
+
 h1
   font-size: 32px
   font-weight: 600
+
+h3
+  font-size: 20px
+  font-weight: 600
+
+h1, h2, h3, h4, h5, h6
+  margin-top: 0
+  margin-bottom: 0
+hr
+  margin-top: 50px
+  margin-bottom: 25px
+
+.tooltipped
+  position: relative
+
+.avatar-group-item
+  display: inline-block
+  margin-bottom: 3px
+
+.three-fourths
+  width: 70%
+
+.tabnav
+  margin-top: 0
+  margin-bottom: 15px
+  border-bottom: 1px solid #ddd
+
+.float-right
+  float: right !important
+
+.btn-sm
+  padding: 3px 10px
+  font-size: 12px
+  line-height: 20px
+
+.btn
+  position: relative
+  display: inline-block
+  padding: 6px 12px
+  font-size: 14px
+  font-weight: 600
+  line-height: 20px
+  color: #333
+  white-space: nowrap
+  vertical-align: middle
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  background-color: #eee
+  background-image: -webkit-linear-gradient(#fcfcfc, #eee)
+  background-image: linear-gradient(#fcfcfc, #eee)
+  border: 1px solid #d5d5d5
+  border-radius: 3px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+a
+  color: #4078c0
+  text-decoration: none
+
+a
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+
+a:-webkit-any-link
+  color: -webkit-link
+  text-decoration: underline
+  cursor: auto
+
+.btn .octicon
+  vertical-align: text-top
+
+svg:not(:root)
+  overflow: hidden
+
+.octicon
+  vertical-align: text-bottom
+
+.octicon
+  display: inline-block
+  vertical-align: text-top
+  fill: currentColor
+
+.tabnav-tab.selected
+  color: #333
+  background-color: #fff
+  border-color: #ddd
+  border-radius: 3px 3px 0 0
+
+
+.tabnav-tab
+  display: inline-block
+  padding: 8px 12px
+  font-size: 14px
+  line-height: 20px
+  color: #666
+  text-decoration: none
+  background-color: transparent
+  border: 1px solid transparent
+  border-bottom: 0
+  border-bottom-width: 0px
+  border-bottom-style: initial
+  border-bottom-color: initial
+
+.tabnav-tabs
+  margin-bottom: -1px

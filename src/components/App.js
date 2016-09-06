@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Header'
 import LeftContent from './LeftContent'
+import RightContent from './RightContent'
 import 'whatwg-fetch'
 
 class App extends Component {
@@ -21,13 +22,14 @@ class App extends Component {
       })
   }
   render () {
-    const user = this.state.userData
+    const { userData } = this.state
     return <div className='App'>
-      <Header logo={user.id} />
+      <Header logo={userData.id} />
       <main>
         <div className='page-content container'>
           <div className='columns profile-cols'>
-            <LeftContent userData={this.state.userData} />
+            <LeftContent userData={userData} />
+            <RightContent userData={userData} />
           </div>
         </div>
       </main>

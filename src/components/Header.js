@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Header extends Component {
   static propTypes = {
-    logo: React.PropTypes.string.isRequired
+    logo: React.PropTypes.number
   }
   render () {
     return <div className='Header'>
