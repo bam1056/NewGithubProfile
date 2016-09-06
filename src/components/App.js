@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Header from './Header'
-import LeftContent from './LeftContent'
-import RightContent from './RightContent'
-import 'whatwg-fetch'
+import LeftContent from './leftContent/LeftContent'
+import RightContent from './rightContent/RightContent'
 import myCustomColors from 'rebass'
+import 'whatwg-fetch'
 
 class App extends Component {
   static childContextTypes = {
