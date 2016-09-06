@@ -25,7 +25,8 @@ class App extends Component {
         PanelHeader: {
           backgroundColor: '#F5F5F5',
           border: '1px solid #D8D6D6',
-          margin: '10px 0 0 0'
+          margin: '10px 0 0 0',
+          padding: '7px 10px'
         },
         Panel: {
           border: '1px solid #D8D6D6',
