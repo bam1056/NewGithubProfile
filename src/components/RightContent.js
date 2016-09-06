@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { PanelHeader, Panel, Text } from 'rebass'
+import Contributions from './Contributions'
 
 class RightContent extends Component {
   static propTypes = {
@@ -108,6 +109,7 @@ class RightContent extends Component {
           </div>
         </Text>
       </Panel>
+      <Contributions />
     </div>
   }
 }
