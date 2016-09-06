@@ -9,7 +9,7 @@ class Header extends Component {
       <div className='headContainer'>
         <div className='headerLogo'>
           <img src='http://vectorlogofree.com/wp-content/uploads/2014/02/25231-github-cat-in-a-circle-icon-vector-icon-vector-eps.png'
-            width='38' height='28' alt='octocat' />
+            width='47' height='33' alt='octocat' />
         </div>
         <div className='headerSearch'>
           <form action='search'>
