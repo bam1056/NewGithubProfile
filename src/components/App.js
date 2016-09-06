@@ -3,14 +3,35 @@ import Header from './Header'
 import LeftContent from './LeftContent'
 import RightContent from './RightContent'
 import 'whatwg-fetch'
+import myCustomColors from 'rebass'
 
 class App extends Component {
-
+  static childContextTypes = {
+    rebass: React.PropTypes.object
+  }
   constructor () {
     super()
     this.state = {
       user: 'bam1056',
       userData: {}
+    }
+  }
+
+  getChildContext () {
+    return {
+      rebass: {
+        colors: myCustomColors,
+        fontSizes: [ 64, 48, 24, 18, 16, 14, 12 ],
+        PanelHeader: {
+          backgroundColor: '#F5F5F5',
+          border: '1px solid #D8D6D6',
+          margin: '10px 0 0 0'
+        },
+        Panel: {
+          border: '1px solid #D8D6D6',
+          margin: '0 auto'
+        }
+      }
     }
   }
 
